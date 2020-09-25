@@ -277,7 +277,7 @@ noinst_HEADERS += arch/arm/odp_atomic.h \
 		  arch/arm/odp_llsc.h
 endif
 if ARCH_IS_AARCH64
-__LIB__libodp_linux_la_SOURCES += arch/default/odp_cpu_cycles.c \
+__LIB__libodp_linux_la_SOURCES += arch/aarch64/odp_cpu_cycles.c \
 				  arch/aarch64/odp_global_time.c \
 				  arch/aarch64/odp_sysinfo_parse.c
 odpapiabiarchinclude_HEADERS += arch/default/odp/api/abi/cpu_inlines.h \
