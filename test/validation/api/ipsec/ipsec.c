@@ -1,5 +1,5 @@
 /* Copyright (c) 2017-2018, Linaro Limited
- * Copyright (c) 2019, Nokia
+ * Copyright (c) 2019-2020, Nokia
  * All rights reserved.
  *
  * SPDX-License-Identifier:	 BSD-3-Clause
@@ -184,6 +184,10 @@ int ipsec_check(odp_bool_t ah,
 		if (!capa.ciphers.bit.aes_gcm)
 			return ODP_TEST_INACTIVE;
 		break;
+	case ODP_CIPHER_ALG_AES_CCM:
+		if (!capa.ciphers.bit.aes_ccm)
+			return ODP_TEST_INACTIVE;
+		break;
 	case ODP_CIPHER_ALG_CHACHA20_POLY1305:
 		if (!capa.ciphers.bit.chacha20_poly1305)
 			return ODP_TEST_INACTIVE;
@@ -229,6 +233,10 @@ int ipsec_check(odp_bool_t ah,
 		break;
 	case ODP_AUTH_ALG_AES_GMAC:
 		if (!capa.auths.bit.aes_gmac)
+			return ODP_TEST_INACTIVE;
+		break;
+	case ODP_AUTH_ALG_AES_CCM:
+		if (!capa.auths.bit.aes_ccm)
 			return ODP_TEST_INACTIVE;
 		break;
 	case ODP_AUTH_ALG_CHACHA20_POLY1305:
@@ -318,6 +326,12 @@ int ipsec_check_esp_aes_gcm_128(void)
 				ODP_AUTH_ALG_AES_GCM, 0);
 }
 
+int ipsec_check_esp_aes_gcm_192(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_AES_GCM, 192,
+				ODP_AUTH_ALG_AES_GCM, 0);
+}
+
 int ipsec_check_esp_aes_gcm_256(void)
 {
 	return  ipsec_check_esp(ODP_CIPHER_ALG_AES_GCM, 256,
@@ -330,10 +344,52 @@ int ipsec_check_ah_aes_gmac_128(void)
 				ODP_AUTH_ALG_AES_GMAC, 128);
 }
 
+int ipsec_check_ah_aes_gmac_192(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_NULL, 0,
+				ODP_AUTH_ALG_AES_GMAC, 192);
+}
+
+int ipsec_check_ah_aes_gmac_256(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_NULL, 0,
+				ODP_AUTH_ALG_AES_GMAC, 256);
+}
+
 int ipsec_check_esp_null_aes_gmac_128(void)
 {
 	return  ipsec_check_esp(ODP_CIPHER_ALG_NULL, 0,
 				ODP_AUTH_ALG_AES_GMAC, 128);
+}
+
+int ipsec_check_esp_null_aes_gmac_192(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_NULL, 0,
+				ODP_AUTH_ALG_AES_GMAC, 192);
+}
+
+int ipsec_check_esp_null_aes_gmac_256(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_NULL, 0,
+				ODP_AUTH_ALG_AES_GMAC, 256);
+}
+
+int ipsec_check_esp_aes_ccm_128(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_AES_CCM, 128,
+				ODP_AUTH_ALG_AES_CCM, 0);
+}
+
+int ipsec_check_esp_aes_ccm_192(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_AES_CCM, 192,
+				ODP_AUTH_ALG_AES_CCM, 0);
+}
+
+int ipsec_check_esp_aes_ccm_256(void)
+{
+	return  ipsec_check_esp(ODP_CIPHER_ALG_AES_CCM, 256,
+				ODP_AUTH_ALG_AES_CCM, 0);
 }
 
 int ipsec_check_esp_chacha20_poly1305(void)
