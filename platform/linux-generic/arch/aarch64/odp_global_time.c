@@ -10,23 +10,13 @@
 
 #include <odp_debug_internal.h>
 #include <odp/api/abi/cpu_time.h>
+#include <odp/api/abi/cpu_rdtsc.h>
 
 #include <odp/visibility_begin.h>
 
 uint64_t _odp_cpu_global_time(void)
 {
-	uint64_t cntvct;
-
-	/*
-	 * To be consistent with other architectures, do not issue a
-	 * serializing instruction, e.g. ISB, before reading this
-	 * sys reg.
-	 */
-
-	/* Memory clobber to minimize optimization around load from sys reg. */
-	__asm__ volatile("mrs %0, cntvct_el0" : "=r"(cntvct) : : "memory");
-
-	return cntvct;
+	return _odp_cpu_rdtsc();
 }
 
 #include <odp/visibility_end.h>
