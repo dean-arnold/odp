@@ -1,0 +1,30 @@
+<map id="classification.h" name="classification.h">
+<area shape="rect" id="node2" href="$api_2std__types_8h.html" title="Standard C language types and definitions for ODP. " alt="" coords="369,841,519,868"/>
+<area shape="rect" id="node16" href="$api_2spec_2classification_8h.html" title="ODP classification descriptor. " alt="" coords="951,80,1156,107"/>
+<area shape="rect" id="node4" href="$api_2spec_2std__types_8h.html" title="Standard C language types and definitions for ODP. " alt="" coords="145,923,327,950"/>
+<area shape="rect" id="node5" href="$visibility__begin_8h_source.html" title="odp/visibility_begin.h" alt="" coords="1565,1169,1726,1196"/>
+<area shape="rect" id="node7" href="$api_2align_8h.html" title="ODP alignments. " alt="" coords="345,1005,463,1032"/>
+<area shape="rect" id="node10" href="$visibility__end_8h_source.html" title="odp/visibility_end.h" alt="" coords="521,1169,671,1196"/>
+<area shape="rect" id="node9" href="$api_2spec_2align_8h.html" title="ODP alignments. " alt="" coords="464,1087,616,1114"/>
+<area shape="rect" id="node17" href="$api_2packet__io_8h.html" title="ODP Packet IO. " alt="" coords="1527,155,1676,181"/>
+<area shape="rect" id="node38" href="$support_8h.html" title="ODP support API &#45; platform specific header. " alt="" coords="810,1005,945,1032"/>
+<area shape="rect" id="node40" href="$threshold_8h.html" title="ODP threshold API &#45; platform specific header. " alt="" coords="347,155,493,181"/>
+<area shape="rect" id="node18" href="$api_2spec_2packet__io_8h.html" title="ODP Packet IO. " alt="" coords="1395,229,1578,256"/>
+<area shape="rect" id="node19" href="$deprecated_8h.html" title="Control deprecated API definitions. " alt="" coords="1438,841,1597,868"/>
+<area shape="rect" id="node21" href="$packet__io__stats_8h.html" title="ODP packet IO stats. " alt="" coords="1550,304,1738,331"/>
+<area shape="rect" id="node23" href="$api_2queue_8h.html" title="ODP queue. " alt="" coords="966,304,1093,331"/>
+<area shape="rect" id="node29" href="$api_2packet_8h.html" title="ODP packet descriptor. " alt="" coords="1279,603,1409,629"/>
+<area shape="rect" id="node31" href="$api_2time_8h.html" title="ODP time. " alt="" coords="966,759,1082,786"/>
+<area shape="rect" id="node20" href="$spec_2deprecated_8h.html" title="Macro for deprecated API definitions. " alt="" coords="1213,1087,1406,1114"/>
+<area shape="rect" id="node22" href="$spec_2packet__io__stats_8h.html" title="ODP Packet IO. " alt="" coords="1431,1080,1583,1121"/>
+<area shape="rect" id="node26" href="$api_2spec_2queue_8h.html" title="ODP queue. " alt="" coords="949,379,1109,405"/>
+<area shape="rect" id="node27" href="$api_2event_8h.html" title="ODP event. " alt="" coords="1009,453,1132,480"/>
+<area shape="rect" id="node34" href="$queue__types_8h.html" title="ODP queue types. " alt="" coords="1106,752,1254,793"/>
+<area shape="rect" id="node28" href="$api_2spec_2event_8h.html" title="ODP event. " alt="" coords="1124,528,1281,555"/>
+<area shape="rect" id="node30" href="$api_2spec_2packet_8h.html" title="ODP packet descriptor. " alt="" coords="1187,677,1351,704"/>
+<area shape="rect" id="node33" href="$api_2spec_2time_8h.html" title="ODP time. " alt="" coords="1038,1087,1189,1114"/>
+<area shape="rect" id="node35" href="$api_2schedule__types_8h.html" title="ODP schedule. " alt="" coords="909,841,1096,868"/>
+<area shape="rect" id="node37" href="$api_2spec_2schedule__types_8h.html" title="ODP schedule types. " alt="" coords="983,916,1150,957"/>
+<area shape="rect" id="node39" href="$spec_2support_8h.html" title="ODP support API. " alt="" coords="793,1087,962,1114"/>
+<area shape="rect" id="node41" href="$spec_2threshold_8h.html" title="ODP threshold descriptor. " alt="" coords="243,759,424,786"/>
+</map>
